@@ -1,0 +1,130 @@
+  FILE: index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav><a href="index.html">Index</a> <a href="products.html">Products</a> <a href="cart.html">Cart</a> <a href="contact.html">Contact</a></nav>
+
+  <!-- CONTENT -->
+    <h1>Welcome to our store!</h1>
+    <p>We have a wide variety of products for you to choose from.</p>
+    <button class="btn">Go to Products</button>
+  
+  <!-- FOOTER -->
+  <footer>&copy; 2023 Our Store. All rights reserved.</footer>
+</body>
+</html>
+
+FILE: products.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav><a href="index.html">Index</a> <a href="products.html">Products</a> <a href="cart.html">Cart</a> <a href="contact.html">Contact</a></nav>
+
+  <!-- CONTENT -->
+    <h1>Our Products</h1>
+    <p>Check out our latest products.</p>
+    <button class="btn">Go to Cart</button>
+  
+  <!-- FOOTER -->
+  <footer>&copy; 2023 Our Store. All rights reserved.</footer>
+</body>
+</html>
+
+FILE: cart.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav><a href="index.html">Index</a> <a href="products.html">Products</a> <a href="cart.html">Cart</a> <a href="contact.html">Contact</a></nav>
+
+  <!-- CONTENT -->
+    <h1>Your Cart</h1>
+    <p>Check out your cart.</p>
+    <button class="btn">Go to Contact Us</button>
+  
+  <!-- FOOTER -->
+  <footer>&copy; 2023 Our Store. All rights reserved.</footer>
+</body>
+</html>
+
+FILE: contact.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav><a href="index.html">Index</a> <a href="products.html">Products</a> <a href="cart.html">Cart</a> <a href="contact.html">Contact</a></nav>
+
+  <!-- CONTENT -->
+    <h1>Get in touch!</h1>
+    <p>Reach out to us.</p>
+    <button class="btn">Go to Index</button>
+  
+  <!-- FOOTER -->
+  <footer>&copy; 2023 Our Store. All rights reserved.</footer>
+</body>
+</html>
+
+FILE: styles.css
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2196F3;
+}
+
+h1, p {
+    margin: 20px;
+}
+
+button.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    background-color: #2196F3;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+}
+
