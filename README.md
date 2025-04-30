@@ -1,87 +1,54 @@
-AI Website Generator Using CodeLlama
+# AI Website Generator Using CodeLlama
 
-🧠 Project Summary
+## Project Summary
+This AI-powered prototype generates basic multi-page website templates using OpenAI’s CodeLlama model via Ollama. It supports different business types and produces zipped HTML/CSS templates with navigation, which can be further edited and customized by developers.
 
-This AI-powered web app generates multi-page, responsive websites based on user input. It uses OpenAI’s CodeLlama model (run via Ollama) to create HTML and CSS files with full navigation support. Users can select a business type and receive a downloadable .zip containing the entire website.
+## Features
+- Generates website templates for various business types
+- Creates multiple HTML pages with navigation
+- Includes a shared `styles.css` for consistent styling
+- User input handled via a Flask web interface
+- ZIP download of generated site structure
 
-⚠️ Note: This is a prototype and does not produce fully functional, production-ready websites. It creates basic HTML/CSS templates which can be further customized and edited by developers.
+## Tech Stack
+- Python 3
+- Flask
+- Ollama (CodeLlama model)
 
-🚀 Features
-
-Generate websites for multiple business types
-
-Multi-page HTML generation
-
-Shared styles.css for design consistency
-
-Dynamic navigation bars across all pages
-
-Flask-based web interface for interaction
-
-One-click ZIP download of generated sites
-
-🏗️ Tech Stack
-
-Python
-
-Flask
-
-Ollama (with CodeLlama model)
-
-📁 File Structure
-
+## File Structure
+```
 .
-├── app.py                # Main Flask application
+├── app.py
 ├── templates/
-│   └── index.html        # HTML form for user input
-├── generated_sites/      # Auto-generated folders and zipped websites
+│   └── index.html
+├── generated_sites/
 ├── requirements.txt
-├── README.md             # This file
-└── debug_output.txt      # Captures model output for debugging
+├── README.md
+└── debug_output.txt
+```
 
-🧾 requirements.txt
+## Installation
+### Requirements
+- Python 3.9+
+- [Ollama](https://ollama.com) with CodeLlama installed
 
-Flask==2.3.3
-
-⚠️ Make sure Ollama is installed separately on your machine.
-
-Install Python dependencies:
-
-pip install -r requirements.txt
-
-Install and run Ollama:
-
-# Download and install Ollama from https://ollama.com
-ollama run codellama
-
-🔧 How to Run
-
+### Setup
+```bash
 git clone https://github.com/yourusername/ai-website-generator.git
 cd ai-website-generator
 pip install -r requirements.txt
+```
+
+### Run
+```bash
 python app.py
+```
+Visit `http://localhost:5000` in your browser.
 
-Visit: http://localhost:5000 in your browser.
+## requirements.txt
+```
+Flask==2.3.3
+```
 
-🧪 How It Works
-
-User selects a business type from the form
-
-Flask generates a custom prompt and sends it to CodeLlama via ollama run
-
-Model output is parsed into multiple HTML files and one styles.css
-
-Files are zipped and returned for download
-
-📸 Screenshots (Optional)
-
-Include screenshots of your form UI and generated site structure.
-
-👨‍💼 For HR/Presentation
-
-“I developed an AI-powered agent using CodeLlama to generate complete, styled websites based on business categories. It dynamically creates multiple pages with internal navigation and supports instant download, all through a lightweight Flask web app.”
-
-📜 License
-
+## License
 MIT License
-
